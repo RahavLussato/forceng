@@ -5,7 +5,7 @@
  */
 angular.module('forceng', [])
 
-  .factory('force', ["$rootScope", "$q", "$location", "$window", "$http",
+  .factory('force', ["$rootScope", "$q", "$window", "$http",
       function ($rootScope, $q, $window, $http) {
 
     // The login URL for the OAuth process
@@ -539,7 +539,7 @@ angular.module('forceng', [])
       oauthCallback: oauthCallback
     };
 
-  });
+  }]);
 
 // Global function called back by the OAuth login dialog
 function oauthCallback(url) {
