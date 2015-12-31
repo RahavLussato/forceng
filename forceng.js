@@ -5,7 +5,8 @@
  */
 angular.module('forceng', [])
 
-  .factory('force', function ($rootScope, $q, $window, $http) {
+  .factory('force', ["$rootScope", "$q", "$location", "$window", "$http",
+      function ($rootScope, $q, $window, $http) {
 
     // The login URL for the OAuth process
     // To override default, pass loginURL in init(props)
